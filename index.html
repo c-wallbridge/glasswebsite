@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Portfolio</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+
+        body {
+            font-family: 'EB Garamond', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            letter-spacing: 0.2em; /* Adjust the letter spacing here for wider spacing */
+            background-image: url("https://raw.githubusercontent.com/c-wallbridge/websiteimage/main/image1.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            animation: moveBackground 30s linear infinite; /* Add animation */
+        }
+        @keyframes moveBackground {
+            0% { background-position: center center; }
+            50% { background-position: center top; }
+            100% { background-position: center center; }
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7); /* Set the background of the container to semi-transparent black */
+            border: 2px solid #d4af37;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            border-radius: 12px;
+            width: 100%;
+            max-width: 800px; /* Increase the max-width to utilize more width */
+            margin: 0 20px; /* Add margin to ensure it doesn't touch the edges on very small screens */
+        }
+        h1 {
+            margin: 0;
+            font-size: 3.63em; /* Increase font size by 10% */
+            font-weight: 50; /* Reduced font weight to 50 */
+            line-height: 1.2; /* Increase line height */
+            color: #d4af37; /* Font color */
+            text-transform: none; /* Text transformation */
+            white-space: nowrap; /* Ensure the title is on one line */
+        }
+        p {
+            margin: 15px 0;
+            font-size: 1.1em; /* Increase font size by 10% */
+            color: #d4af37; /* Font color */
+        }
+        .contact {
+            margin-top: 20px;
+            font-size: 1.1em; /* Increase font size by 10% */
+            color: #d4af37; /* Font color */
+            line-height: 1.5; /* Increase line height for better spacing */
+        }
+        .contact p{
+            margin: 10px 0; /* Increase space around each contact item */
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 3.03em; /* Increase font size by 10% */
+            }
+            p {
+                font-size: 1.1em; /* Increase font size by 10% */
+            }
+            .contact {
+                font-size: 1.1em; /* Increase font size by 10% */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cass Wallbridge</h1>
+        <div class="contact">
+            <p>GLASS ARTIST</p>
+            <p>casswallbridge@gmail.com</p>
+            <p>+44 7919 870 084</p>
+        </div>
+    </div>
+</body>
+</html>
